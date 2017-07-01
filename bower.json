@@ -1,0 +1,17 @@
+{
+  "name": "arcano-p02",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Arturo Cardenas"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
