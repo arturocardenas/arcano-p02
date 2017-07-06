@@ -4,20 +4,24 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'public/stylesheets/style.css': 'sass/style.scss'
-		}
         },
 	  options: {
+		  sourceMap: true,
 		  includePaths: [
-			'./bower_components/css-calc-mixin'
+		  require('node-bourbon').includePaths,
+			'./bower_components/css-calc-mixin',
+			'./bower_components/color-scale',
+			'./bower_components/type-rhytm-scale'		
 		  ]
 	  }
+	}
   },
   watch: {
   source: {
-  file: ['sass/**/*.scss', 'views/**/*.jade'],
+  files: ['sass/**/*.scss', 'views/**/*.jade'],
   tasks: ['sass'],
   options: {
-	  livereload: true
+	  livereload: true,
   }
   }
   }
