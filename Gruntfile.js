@@ -4,8 +4,13 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'public/stylesheets/style.css': 'sass/style.scss'
-        }
-      }
+		}
+        },
+	  options: {
+		  includePaths: [
+			'./bower_components/css-calc-mixin'
+		  ]
+	  }
   },
   watch: {
   source: {
