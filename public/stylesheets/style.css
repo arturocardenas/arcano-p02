@@ -1,4 +1,16 @@
 body {
   background-color: orange; }
 
+.block {
+  width: calc(100% - 220px); }
+
+.block {
+  margin: 0 calc(100% - 220px); }
+
+.block {
+  width: calc(100% - 220px) 0; }
+
+.block {
+  width: calc(50% + 220px) 0; }
+
 /*# sourceMappingURL=style.css.map */

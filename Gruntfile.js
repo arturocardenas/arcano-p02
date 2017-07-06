@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 	}
   },
   watch: {
-  source: {
+  sass: {
   files: ['sass/**/*.scss', 'views/**/*.jade'],
   tasks: ['sass'],
   options: {
